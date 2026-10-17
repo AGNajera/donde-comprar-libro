@@ -1,12 +1,14 @@
 :root {
   --font-ui: "Libron-Regular";
   --font-bold: "Libron-Bold";
-  --text: #e6e3e3;
-  --text-muted: #c6c1c1e1;
+
+  --background: #141213;
+  --text: #efe4d8;
+  --text-muted: #b9a9a0;
   --primary: #d6006f;
   --primary-text: #ff7ab9;
   --primary-hover: #b8005f;
-  --background: #0a0a0a;
+  --primary-strong: #cc026a;
 }
 
 @font-face {
@@ -83,7 +85,7 @@ p {
 }
 
 button {
-  background-color: var(--primary);
+  background-color: var(--primary-strong);
   color: var(--text);
   border: 0;
   border-radius: 20px;
