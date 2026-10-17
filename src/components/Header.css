@@ -7,7 +7,7 @@ header {
   background-color: var(--foreground);
 }
 
-section > .title {
+.title {
   font-size: 1.4rem;
   text-decoration: none;
   color: var(--text);

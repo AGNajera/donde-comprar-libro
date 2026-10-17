@@ -9,14 +9,6 @@ footer {
   padding: 0.5rem;
 }
 
-small {
+footer > small {
   font-family: var(--font-bold);
-  padding: 0.5rem;
-}
-
-span {
-  color: var(--primary);
-  border: 1px solid var(--primary);
-  padding: 0.1rem 0.3rem;
-  border-radius: 10px;
 }

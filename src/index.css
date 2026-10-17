@@ -3,9 +3,9 @@
   --font-bold: "Libron-Bold";
   --text: #eee;
   --text-muted: #c6c1c1e1;
-  --primary: oklch(56.678% 0.22944 0.744);
-  --primary-text: oklch(75.144% 0.17467 352.417);
-  --primary-hover: oklch(50.644% 0.2051 0.554);
+  --primary: #d6006f;
+  --primary-text: #ff7ab9;
+  --primary-hover: #b8005f;
   --background: #0a0a0a;
   --foreground: #0c0c0c;
 }
@@ -26,12 +26,16 @@
   box-sizing: border-box;
 }
 
-html {
+body {
   margin: 0;
   padding: 0;
+}
+
+html {
   font-family: var(--font-ui), "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background: var(--background);
   height: 100dvh;
+  width: 100vw;
 }
 
 h1,
@@ -39,6 +43,8 @@ h2,
 h3 {
   font-family: var(--font-bold);
   color: var(--text);
+  margin: 0;
+  padding: 0;
 }
 
 small {
@@ -73,6 +79,29 @@ a {
 }
 
 p {
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: var(--text);
+}
+
+button {
+  background-color: var(--primary);
+  color: var(--text);
+  border: 0;
+  border-radius: 20px;
+  min-height: 2em;
+  cursor: pointer;
+  padding: 0.4rem 0.6rem;
+
+  &:hover,
+  &:focus {
+    background-color: var(--primary-hover);
+    transition: all 0.3s ease;
+  }
+}
+
+span {
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  padding: 0.1rem 0.3rem;
+  border-radius: 10px;
 }
