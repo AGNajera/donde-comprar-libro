@@ -2,14 +2,10 @@ import "./Hero.css";
 
 export function Hero() {
   return (
-    <main className="hero">
+    <section className="hero">
       <h2>Busca tu libro favorito</h2>
       <p>Busca tu libro favorito y descubre en donde puedes comprarlo.</p>
-      <form
-        className="search-form"
-        name="search-form"
-        method="get"
-      >
+      <form className="search-form" name="search-form" method="get">
         <input
           type="text"
           placeholder="Busca tu libro favorito"
@@ -19,6 +15,6 @@ export function Hero() {
           Buscar
         </button>
       </form>
-    </main>
+    </section>
   );
 }

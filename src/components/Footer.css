@@ -3,12 +3,11 @@ footer {
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: var(--foreground);
-  position: absolute;
-  bottom: 0;
   padding: 0.5rem;
+  margin-top: auto;
+  margin-bottom: 0.5rem;
 }
 
-footer > small {
+.footer-text {
   font-family: var(--font-bold);
 }

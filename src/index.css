@@ -1,25 +1,26 @@
 :root {
   --font-ui: "Libron-Regular";
   --font-bold: "Libron-Bold";
-  --text: #eee;
+  --text: #e6e3e3;
   --text-muted: #c6c1c1e1;
   --primary: #d6006f;
   --primary-text: #ff7ab9;
   --primary-hover: #b8005f;
   --background: #0a0a0a;
-  --foreground: #0c0c0c;
 }
 
 @font-face {
   font-family: "Libron-Regular";
   src: url("./assets/font/Libron-Regular.woff2") format("woff2");
   font-weight: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Libron-Bold";
   src: url("./assets/font/Libron-Bold.woff2") format("woff2");
-  font-weight: normal;
+  font-weight: 700;
+  font-display: swap;
 }
 
 * {
@@ -35,7 +36,6 @@ html {
   font-family: var(--font-ui), "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background: var(--background);
   height: 100dvh;
-  width: 100vw;
 }
 
 h1,
@@ -52,7 +52,7 @@ small {
   font-size: 0.8rem;
 }
 
-a {
+.link {
   color: var(--primary-text);
   font-size: 0.8rem;
   text-decoration: none;
@@ -72,7 +72,6 @@ a {
   }
 
   &:hover::after {
-    color: var(--primary-hover);
     transform: scaleX(1);
     transform-origin: left;
   }
@@ -91,17 +90,23 @@ button {
   min-height: 2em;
   cursor: pointer;
   padding: 0.4rem 0.6rem;
+  transition: all 0.2s ease-in;
 
   &:hover,
-  &:focus {
-    background-color: var(--primary-hover);
-    transition: all 0.3s ease;
+  &:focus-visible {
+    background: var(--primary-hover);
   }
 }
 
 span {
-  color: var(--primary);
+  color: var(--primary-text);
   border: 1px solid var(--primary);
   padding: 0.1rem 0.3rem;
   border-radius: 10px;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
 }

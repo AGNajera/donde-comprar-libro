@@ -4,29 +4,26 @@ header {
   align-items: center;
   padding: 0.5rem;
   width: 100%;
-  background-color: var(--foreground);
+}
+
+.logo {
+  font-family: var(--font-ui);
+  font-weight: normal;
 }
 
 .title {
   font-size: 1.4rem;
   text-decoration: none;
   color: var(--text);
-
-  &::after {
-    background-color: none;
-    transform: none;
-    transform: scaleX(0);
-    transform-origin: none;
-  }
+  transition: all 0.3s ease;
 
   &:hover,
   &:focus {
     color: var(--primary-hover);
-    transition: all 0.3s ease;
   }
 }
 
-section > a {
+.genres .link {
   color: var(--text-muted);
   font-size: 1rem;
 }

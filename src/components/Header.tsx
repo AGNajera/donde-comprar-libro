@@ -3,14 +3,16 @@ import "./Header.css";
 export function Header() {
   return (
     <header>
-      <section className="logo">
+      <h1 className="logo">
         <a className="title" href="/">
           Donde comprar libro
         </a>
-      </section>
-      <section className="genres">
-        <a href="/">Géneros</a>
-      </section>
+      </h1>
+      <nav className="genres">
+        <a className="link" href="/">
+          Géneros
+        </a>
+      </nav>
     </header>
   );
 }
