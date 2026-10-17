@@ -1,0 +1,22 @@
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: var(--foreground);
+  position: absolute;
+  bottom: 0;
+  padding: 0.5rem;
+}
+
+small {
+  font-family: var(--font-bold);
+  padding: 0.5rem;
+}
+
+span {
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  padding: 0.1rem 0.3rem;
+  border-radius: 10px;
+}
