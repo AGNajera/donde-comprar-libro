@@ -11,3 +11,7 @@ footer {
 .footer-text {
   font-family: var(--font-bold);
 }
+
+.link > span {
+  border: 0;
+}

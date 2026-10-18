@@ -103,7 +103,7 @@ button {
 span {
   color: var(--primary-text);
   border: 1px solid var(--primary);
-  padding: 0.1rem 0.3rem;
+  padding: 0.115rem 0.225rem;
   border-radius: 10px;
 }
 
